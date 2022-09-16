@@ -5,7 +5,7 @@
 # encoding: ascii
 
 # Raises "use of deprecated BigDecimal.new"
-a = { 'hello' => 'world', 'testing' => BigDecimal.new(123.456, 3) }
+a = {           'hello' => 'world', 'testing' => BigDecimal.new(123.456, 3) }
 
 # Raises "`while`/`until` detected in `begin` block"
 begin
@@ -43,7 +43,7 @@ return 1
 
 # Raises "duplicate elsif block detected"
 if x == 1
-  do_something
+        do_something
 elsif x == 1
   do_something_else
 end
@@ -55,12 +55,16 @@ OpenSSL::Cipher::AES.new(128, :GCM)
 # Also raises "multiple methods with same name in the same scope" as we have a
 # method with same name above
 def some_method
-end
+
+
+
+
+    end
 
 # Raises "Invalid annotation keyword format detected"
 def foo
   # TODO Replace this with bar
-  do_something
+     do_something
 end
 
 # Raises "Use `Range#cover?` instead of `Range#include?`"
