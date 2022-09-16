@@ -32,7 +32,20 @@ def some_method(bar)
   puts 'Hello'
 end
 
-	@@ -49,17 +48,16 @@ def some_method
+# Raises "unreachable code detected"
+def some_method
+  return
+  do_something
+end
+
+# Raises "top level return with argument detected"
+return 1
+
+# Raises "duplicate elsif block detected"
+if x == 1
+  do_something
+elsif x == 1
+  do_something_else
 end
 
 # Raises "Deprecated way of initializing OpenSSL::Cipher and OpenSSL::Digest"
@@ -50,7 +63,10 @@ def foo
   do_something
 end
 
-	@@ -70,6 +68,5 @@ def foo
+# Raises "Use `Range#cover?` instead of `Range#include?`"
+(1..9).include?(5)
+
+my_hash = {}
 # Raises "Hash merging can be replaced by hash key assignment"
 my_hash.merge!('key': value)
 
