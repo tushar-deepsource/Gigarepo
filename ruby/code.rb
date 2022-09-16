@@ -5,16 +5,16 @@
 # encoding: ascii
 
 # Raises "use of deprecated BigDecimal.new"
-a = { 'hello' => 'world', 'testing' => BigDecimal.new(123.456, 3) }
+a = {             'hello' => 'world', 'testing' => BigDecimal.new(123.456, 3) }
 
 # Raises "`while`/`until` detected in `begin` block"
 begin
-  do_something
-end while a == b
+         do_something
+end      while a == b
 
 # Raises "multiple comparison detected"
 x < y < z
-10 <= x <= 20
+10     <= x <= 20
 
 # Raises "empty rescue block detected"
 begin
@@ -30,7 +30,7 @@ end
 # Raises "unused method arguments detected"
 def some_method(bar)
   puts 'Hello'
-end
+ end
 
 # Raises "unreachable code detected"
 def some_method
