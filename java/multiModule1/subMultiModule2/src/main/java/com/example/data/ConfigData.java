@@ -1,6 +1,5 @@
 package com.example.data;
 
-import java.net.URL;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -9,8 +8,9 @@ public class ConfigData implements Iterator<String> {
   public static Double ds() {
     return 3.14;
   }
-    private int pos = 0;
-    private Map<String, String> params;
+
+  private int pos = 0;
+  private Map<String, String> params;
 
   public Map<String, String> getParams() {
     return params;
@@ -43,6 +43,6 @@ public class ConfigData implements Iterator<String> {
 
   @Override
   public boolean equals(Object o) { // JAVA-E0110
-    return this.hashCode() != o.hashCode();
+    return this.hashCode() == o.hashCode();
   }
 }
