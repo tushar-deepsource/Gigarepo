@@ -2,11 +2,11 @@ import scala.io.Source
 import scala.collection.mutable
 import scala.collection.immutable
 
-class C {
-  override def finalize(): Unit = println("Finalize")
-}
 
-object Utils {
+
+class   C {
+     override def finalize(): Unit = println("Finalize")
+}object Utils {
   def count(arr: Array[Int], criteria: Int => Boolean): Int                                = arr.filter(criteria).size
   def exists(arr: Array[Int], criteria: Int => Boolean): Boolean                           = arr.find(criteria).isDefined
   def filterBy(arr: Array[Int], criteria: Int => Boolean): Array[Int]                      = arr.filter(criteria)
