@@ -5,7 +5,7 @@ import scala.collection.immutable
 
 
 class   C {
-     override def finalize(): Unit = println("Finalize")
+     override def   finalize(): Unit = println("Finalize")
 }
 object Utils {
   def count(arr: Array[Int], criteria: Int => Boolean): Int                                = arr.filter(criteria).size
