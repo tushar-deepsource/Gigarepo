@@ -1,9 +1,9 @@
-import os
-import pdb
 import random
-import ssl
-import subprocess
+import pdb
 import sys as sys
+import os
+import subprocess
+import ssl
 
 import sqlalchemy
 
@@ -146,10 +146,10 @@ def check(x):
 
 
 def chained_comparison():
-    a = 1
-    b = 2
-    c = 3
-    return a < b and b < c
+     a = 1
+     b = 2
+     c = 3
+     return a      <b and b < c
 
 
 def wrong_callable():
