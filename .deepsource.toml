@@ -33,6 +33,9 @@ name = "black"
 name = "autopep8"
 
 [[transformers]]
+name = "rubocop"
+
+[[transformers]]
 name = "isort"
 
 [[transformers]]
