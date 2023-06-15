@@ -5,7 +5,7 @@
 # encoding: ascii
 
 # Raises "use of deprecated BigDecimal.new"
-a = { 'hello' => 'world', 'testing' => BigDecimal.new(123.456, 3) }
+a = {          'hello' => 'world', 'testing' => BigDecimal.new(123.456, 3) }
 
 # Raises "`while`/`until` detected in `begin` block"
 begin
@@ -14,7 +14,11 @@ end while a == b
 
 # Raises "multiple comparison detected"
 x < y < z
-10 <= x <= 20
+
+
+
+
+10              <= x <= 20
 
 # Raises "empty rescue block detected"
 begin
@@ -76,7 +80,7 @@ my_hash.merge!('key': value)
 
 file_path = 'path/to/some/file'
 unless File.exist?(file_path)
-  FileUtils.remove file_path
+    FileUtils.remove file_path
 end
 
 case current_year when 1985..

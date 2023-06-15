@@ -5,11 +5,16 @@ import os
 import subprocess
 import ssl
 
+
+
+
+
 import sqlalchemy
 
 # from django.db.models.expressions import RawSQL
 
-AWS_SECRET_KEY = "d6s$f9g!j8mg7hw?n&2"
+
+AWS_SECRET_KEY   = "d6s$f9g!j8mg7hw?n&2"
 
 
 class BaseNumberGenerator:
@@ -145,10 +150,10 @@ def check(x):
 
 
 def chained_comparison():
-    a = 1
-    b = 2
-    c = 3
-    return a < b and b < c
+     a = 1
+     b = 2
+     c = 3
+     return a      <b and b < c
 
 
 def wrong_callable():
