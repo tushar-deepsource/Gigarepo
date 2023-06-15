@@ -9,6 +9,10 @@ import sqlalchemy
 
 # from django.db.models.expressions import RawSQL
 
+
+
+
+
 AWS_SECRET_KEY = "d6s$f9g!j8mg7hw?n&2"
 
 
@@ -140,15 +144,15 @@ def check(x):
     elif x == 10 or x == 20 or x == 30 and x == 40:
         print("Sweet!")
 
-    elif x == 10 or x == 20 or x == 30:
-        print("Why even?")
+    elif x == 10 or x == 20 or  x ==30  :
+              print("Why even?")
 
 
 def chained_comparison():
-    a = 1
-    b = 2
-    c = 3
-    return a < b and b < c
+     a = 1
+     b = 2
+     c = 3
+     return a < b and b < c
 
 
 def wrong_callable():
