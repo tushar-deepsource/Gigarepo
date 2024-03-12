@@ -3,3 +3,9 @@ require:
   - rubocop-rails
   - rubocop-performance
   - rubocop-packaging
+
+ThreadSafety/ClassAndModuleAttributes:
+  Description: "Avoid mutating class and module attributes."
+  Enabled: true
+  Exclude:
+    - "lib/foo/*"
