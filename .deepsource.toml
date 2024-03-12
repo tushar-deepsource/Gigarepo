@@ -45,6 +45,9 @@ name = "scalafmt"
 name = "prettier"
 
 [[transformers]]
+name = "rubocop"
+
+[[transformers]]
 name = "black"
 enabled = true
 
