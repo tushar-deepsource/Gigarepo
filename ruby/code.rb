@@ -5,7 +5,7 @@
 # encoding: ascii
 
 # Raises "use of deprecated BigDecimal.new"
-a = {        'hello' => 'world', 'testing' => BigDecimal.new(123.456, 3) }
+a = { 'hello' => 'world', 'testing' => BigDecimal.new(123.456, 3) }
 
 # Raises "`while`/`until` detected in `begin` block"
 begin
@@ -69,7 +69,6 @@ end
 my_hash = {}
 # Raises "Hash merging can be replaced by hash key assignment"
 my_hash.merge!('key': value)
-
 
 # Raises "Use `size` instead of `count`"
 [1, 2, 3].count
